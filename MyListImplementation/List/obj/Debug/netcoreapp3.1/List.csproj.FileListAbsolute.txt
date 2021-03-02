@@ -1,0 +1,13 @@
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.exe
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.deps.json
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.runtimeconfig.json
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.runtimeconfig.dev.json
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.dll
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\bin\Debug\netcoreapp3.1\List.pdb
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.csprojAssemblyReference.cache
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.AssemblyInfoInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.AssemblyInfo.cs
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.csproj.CoreCompileInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.dll
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.pdb
+D:\SoftUni\Repositories\CSharp-Projects\MyListImplementation\List\obj\Debug\netcoreapp3.1\List.genruntimeconfig.cache

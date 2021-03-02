@@ -1,4 +1,6 @@
-﻿using System;
+﻿using List.Models.Classes;
+using System;
+using System.Collections.Generic;
 
 namespace List
 {
@@ -6,7 +8,12 @@ namespace List
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<int> l = new List<int>();
+
+
+            CList<int> listOfInt = new CList<int>();
+            int a = listOfInt[0];
+            Console.WriteLine(a);
         }
     }
 }

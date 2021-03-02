@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y2NxwyyYF8hf7UvVjqk09QASXQwEsWXouwogFZEgBBqRM2wN1BbSHTOzybp/SbQO8p4pUYcwEcJYxU+Q+mpuGw==",
+  "dgSpecHash": "oRTL2jTNnddSL8JPdVX1HlxdfjZHAXhKDgzWgMGI9PoNecupSotPMg16WmXq05VxMcZbcC985wFOw8CzmcwVxg==",
   "success": true,
-  "projectFilePath": "D:\\SoftUni\\Repositories\\C# Projects\\MyCustomListImplementation\\List\\List.csproj",
+  "projectFilePath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\MyListImplementation\\List\\List.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
