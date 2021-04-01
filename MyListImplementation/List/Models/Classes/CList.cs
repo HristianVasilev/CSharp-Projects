@@ -20,7 +20,7 @@ namespace List.Models.Classes
             set => this.array[index] = value; 
         }
 
-        public int Count => throw new NotImplementedException();
+        public int Count => this.array.Length;
 
         public bool IsReadOnly => throw new NotImplementedException();
 
