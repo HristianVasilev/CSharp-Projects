@@ -8,12 +8,17 @@ namespace List
     {
         static void Main(string[] args)
         {
-            List<int> l = new List<int>();
-
-
             CList<int> listOfInt = new CList<int>();
-            int a = listOfInt[0];
-            Console.WriteLine(a);
+
+            
+
+            for (int i = 0; i < 5; i++)
+            {
+                listOfInt.Add(i + 10);
+                Console.WriteLine(listOfInt[i]);
+            }
+            ;
+            
         }
     }
 }
