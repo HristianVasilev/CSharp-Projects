@@ -16,13 +16,16 @@ namespace List.Models.Classes
             this.currentIndex = 0;
         }
 
+
+        public int Capacity => this.array.Length;
+
+        public int Count => this.currentIndex;
+
         public T this[int index]
         {
             get => this.array[index];
             set => this.array[index] = value;
         }
-
-        public int Count => this.array.Length;
 
         public bool IsReadOnly => throw new NotImplementedException();
 

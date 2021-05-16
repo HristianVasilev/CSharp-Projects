@@ -14,6 +14,81 @@ namespace ListNUnitTests
             arrOfInt = new CList<int>();
         }
 
+
+        [Test]
+        public void Capacity_0ItemsInserted_Returns4()
+        {
+            Assert.AreEqual(4, arrOfInt.Capacity);
+        }
+
+        [Test]
+        public void Capacity_3ItemsInserted_Returns4()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                arrOfInt.Add(10 + i);
+            }
+
+            Assert.AreEqual(4, arrOfInt.Capacity);
+        }
+
+        [Test]
+        public void Capacity_6ItemsInserted_Returns8()
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                arrOfInt.Add(10 + i);
+            }
+
+            Assert.AreEqual(8, arrOfInt.Capacity);
+        }
+
+        [Test]
+        public void Capacity_10ItemsInserted_Returns16()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                arrOfInt.Add(10 + i);
+            }
+
+            Assert.AreEqual(16, arrOfInt.Capacity);
+        }
+
+
+
+
+        [Test]
+        public void Count_0ItemsInserted_Returns0()
+        {
+            Assert.AreEqual(0, arrOfInt.Count);
+        }
+
+
+        [Test]
+        public void Count_3ItemsInserted_Returns3()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                arrOfInt.Add(10 + i);
+            }
+
+            Assert.AreEqual(3, arrOfInt.Count);
+        }
+
+        [Test]
+        public void Count_10ItemsInserted_Returns10()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                arrOfInt.Add(10 + i);
+            }
+
+            Assert.AreEqual(10, arrOfInt.Count);
+        }
+
+
+
+
         [Test]
         public void Add4Items_ValidIntegers_Pass()
         {
@@ -42,6 +117,9 @@ namespace ListNUnitTests
             }
         }
 
+
+
+
         [Test]
         public void Contains_ValidInput_ReturnsTrue()
         {
@@ -63,6 +141,8 @@ namespace ListNUnitTests
 
             Assert.AreEqual(false, arrOfInt.Contains(97));
         }
+
+
 
         [Test]
         public void Clear_ValidInput_ReturnsAllFalse()
