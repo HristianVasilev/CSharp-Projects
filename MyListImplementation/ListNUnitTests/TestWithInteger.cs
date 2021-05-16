@@ -6,19 +6,19 @@ namespace ListNUnitTests
 {
     public class TestWithInteger
     {
-        private static CList<int> arrOfInt;
+        private static CList<int> listOfInt;
 
         [SetUp]
         public void Setup()
         {
-            arrOfInt = new CList<int>();
+            listOfInt = new CList<int>();
         }
 
 
         [Test]
         public void Capacity_0ItemsInserted_Returns4()
         {
-            Assert.AreEqual(4, arrOfInt.Capacity);
+            Assert.AreEqual(4, listOfInt.Capacity);
         }
 
         [Test]
@@ -26,10 +26,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 3; i++)
             {
-                arrOfInt.Add(10 + i);
+                listOfInt.Add(10 + i);
             }
 
-            Assert.AreEqual(4, arrOfInt.Capacity);
+            Assert.AreEqual(4, listOfInt.Capacity);
         }
 
         [Test]
@@ -37,10 +37,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 6; i++)
             {
-                arrOfInt.Add(10 + i);
+                listOfInt.Add(10 + i);
             }
 
-            Assert.AreEqual(8, arrOfInt.Capacity);
+            Assert.AreEqual(8, listOfInt.Capacity);
         }
 
         [Test]
@@ -48,10 +48,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 10; i++)
             {
-                arrOfInt.Add(10 + i);
+                listOfInt.Add(10 + i);
             }
 
-            Assert.AreEqual(16, arrOfInt.Capacity);
+            Assert.AreEqual(16, listOfInt.Capacity);
         }
 
 
@@ -60,7 +60,7 @@ namespace ListNUnitTests
         [Test]
         public void Count_0ItemsInserted_Returns0()
         {
-            Assert.AreEqual(0, arrOfInt.Count);
+            Assert.AreEqual(0, listOfInt.Count);
         }
 
 
@@ -69,10 +69,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 3; i++)
             {
-                arrOfInt.Add(10 + i);
+                listOfInt.Add(10 + i);
             }
 
-            Assert.AreEqual(3, arrOfInt.Count);
+            Assert.AreEqual(3, listOfInt.Count);
         }
 
         [Test]
@@ -80,10 +80,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 10; i++)
             {
-                arrOfInt.Add(10 + i);
+                listOfInt.Add(10 + i);
             }
 
-            Assert.AreEqual(10, arrOfInt.Count);
+            Assert.AreEqual(10, listOfInt.Count);
         }
 
 
@@ -94,12 +94,12 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 4; i++)
             {
-                arrOfInt.Add(i + 10);
+                listOfInt.Add(i + 10);
             }
 
             for (int i = 0; i < 4; i++)
             {
-                Assert.AreEqual(i + 10, arrOfInt[i]);
+                Assert.AreEqual(i + 10, listOfInt[i]);
             }
         }
 
@@ -108,12 +108,12 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 6; i++)
             {
-                arrOfInt.Add(i + 10);
+                listOfInt.Add(i + 10);
             }
 
             for (int i = 0; i < 6; i++)
             {
-                Assert.AreEqual(i + 10, arrOfInt[i]);
+                Assert.AreEqual(i + 10, listOfInt[i]);
             }
         }
 
@@ -125,10 +125,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 10; i++)
             {
-                arrOfInt.Add(i + 10);
+                listOfInt.Add(i + 10);
             }
 
-            Assert.AreEqual(true, arrOfInt.Contains(15));
+            Assert.AreEqual(true, listOfInt.Contains(15));
         }
 
         [Test]
@@ -136,10 +136,10 @@ namespace ListNUnitTests
         {
             for (int i = 0; i < 10; i++)
             {
-                arrOfInt.Add(i+10);
+                listOfInt.Add(i + 10);
             }
 
-            Assert.AreEqual(false, arrOfInt.Contains(97));
+            Assert.AreEqual(false, listOfInt.Contains(97));
         }
 
 
@@ -151,20 +151,61 @@ namespace ListNUnitTests
 
             for (int i = 0; i < integers.Length; i++)
             {
-                arrOfInt.Add(integers[i]);
+                listOfInt.Add(integers[i]);
             }
 
             for (int i = 0; i < integers.Length; i++)
             {
-                Assert.AreEqual(integers[i], arrOfInt[i]);
-            }         
+                Assert.AreEqual(integers[i], listOfInt[i]);
+            }
 
-            arrOfInt.Clear();
+            listOfInt.Clear();
 
             for (int i = 0; i < integers.Length; i++)
             {
-                Assert.AreNotEqual(integers[i], arrOfInt[i]);
-            }       
+                Assert.AreNotEqual(integers[i], listOfInt[i]);
+            }
+        }
+
+
+
+        [Test]
+        public void CopyTo_EmptyArray_ReturnsFilledArray()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                listOfInt.Add(10 + i);
+            }
+
+            int[] array = new int[8];
+            listOfInt.CopyTo(array);
+
+            for (int i = 0; i < listOfInt.Count; i++)
+            {
+                Assert.AreEqual(listOfInt[i], array[i]);
+            }
+        }
+
+        [Test]
+        public void CopyTo_Array_ReturnsExpectedArray()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                listOfInt.Add(10 + i);
+            }
+
+            int[] array = new int[10];
+            array[0] = 55;
+            array[1] = 66;
+            listOfInt.CopyTo(array, 2);
+
+            Assert.AreEqual(55, array[0]);
+            Assert.AreEqual(66, array[1]);
+
+            for (int i = 0; i < listOfInt.Count; i++)
+            {
+                Assert.AreEqual(listOfInt[i], array[i + 2]);
+            }
         }
     }
 }

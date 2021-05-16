@@ -9,6 +9,8 @@ namespace List.Models.Classes
     {
         private T[] array;
         private int currentIndex;
+        private int arrayIndex;
+
 
         public CList()
         {
@@ -61,18 +63,21 @@ namespace List.Models.Classes
         {
             for (int i = 0; i < this.array.Length; i++)
             {
-                if (array[i].Equals( item))
+                if (array[i].Equals(item))
                 {
                     return true;
                 }
             }
 
             return false;
-        }
+        }  
 
-        public void CopyTo(T[] array, int arrayIndex)
+        public void CopyTo(T[] array, int arrayIndex = 0)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < this.array.Length; i++)
+            {
+                array[i+arrayIndex] = this.array[i];
+            }
         }
 
         public IEnumerator<T> GetEnumerator()
