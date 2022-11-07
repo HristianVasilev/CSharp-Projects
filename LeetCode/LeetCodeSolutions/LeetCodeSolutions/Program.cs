@@ -9,5 +9,14 @@ Solution solution = new Solution();
 //var kthPalindrome = solution.KthPalindrome(new int[] { 3, 421228234, 730303391, 22, 296799274, 610019431, 83, 8, 389148978, 76 }, 6);
 //Console.WriteLine(String.Join(", ", kthPalindrome));
 
-var twoSumResult = solution.TwoSum(new int[] { 3, 2, 3 }, 6);
-Console.WriteLine($"[{String.Join(", ", twoSumResult)}]");
+//var twoSumResult = solution.TwoSum(new int[] { 3, 2, 3 }, 6);
+//Console.WriteLine($"[{String.Join(", ", twoSumResult)}]");
+
+var addTwoNumbers = solution.AddTwoNumbers(
+    new ListNode(2, new ListNode(4, new ListNode(3))),
+    new ListNode(5, new ListNode(6, new ListNode(4))));
+while (addTwoNumbers != null)
+{
+    Console.Write(addTwoNumbers.val);
+    addTwoNumbers = addTwoNumbers.next;
+}

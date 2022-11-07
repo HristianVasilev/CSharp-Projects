@@ -4,6 +4,8 @@
     using System.Linq;
     using System.Collections.Generic;
     using System.Net.Http.Headers;
+    using System.Text;
+    using System.Numerics;
 
     public class Solution
     {
@@ -101,6 +103,35 @@
                 }
             }
             return null;
+        }
+
+        public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        {
+            StringBuilder firstNumber = new StringBuilder();
+            StringBuilder secondNumber = new StringBuilder();
+            while (l1 != null)
+            {
+                firstNumber.Append(l1.val.ToString());
+                l1 = l1.next;
+            }
+
+            while (l2 != null)
+            {
+                secondNumber.Append(l2.val.ToString());
+                l2 = l2.next;
+            }
+
+            string firstNumberText = string.Join(string.Empty, firstNumber.ToString().Trim().Reverse());
+            string secondNumberText = string.Join(string.Empty, secondNumber.ToString().Trim().Reverse());
+
+            var result = (BigInteger.Parse(firstNumberText) + BigInteger.Parse(secondNumberText)).ToString();
+            ListNode resultNode = null;
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                resultNode = new ListNode(int.Parse(result[i].ToString()), resultNode);
+            }
+            return resultNode;
         }
 
         #region Help methods
