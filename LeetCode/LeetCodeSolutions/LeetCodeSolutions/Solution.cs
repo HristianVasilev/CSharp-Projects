@@ -50,40 +50,42 @@
 
         public long[] KthPalindrome(int[] queries, int intLength)
         {
-            int currentNumber = int.Parse("1" + GetNZeros(intLength - 1));
-
-            List<int> palindromeNumbers = new List<int>();
-
-            while (currentNumber.ToString().Length == intLength)
+            int n = queries.Length;
+            long[] result = new long[n];
+            long maxNumber = 0;
+            for (int i = 0; i < intLength; i++)
             {
-                var numberAsString = currentNumber.ToString();
-                var leftPart = numberAsString.Take(numberAsString.Length / 2).ToArray();
-                var rightPartReversed = numberAsString.TakeLast(numberAsString.Length / 2).Reverse().ToArray();
-
-                bool isPalindrom = ArraysAreEqual(leftPart, rightPartReversed);
-
-                if (isPalindrom)
-                {
-                    palindromeNumbers.Add(currentNumber);
-                }
-                currentNumber++;
+                maxNumber = maxNumber * 10 + 9;
             }
 
-            List<long> result = new List<long>();
-
-            for (int i = 0; i < queries.Length; i++)
+            for (int i = 0; i < n; i++)
             {
-                var position = queries[i];
-                if (palindromeNumbers.Count >= position)
+                int nth = queries[i];
+                int k = intLength;
+
+                long temp = ((k & 1) == 1) ? (k / 2) : (k / 2 - 1);
+                long palin = (long)Math.Pow(10, temp);
+
+                palin += nth - 1;
+                temp = palin;
+                if ((k & 1) == 1)
                 {
-                    result.Add(palindromeNumbers[position - 1]);
+                    palin /= 10;
                 }
-                else
+
+                while (palin > 0)
                 {
-                    result.Add(-1);
+                    temp = temp * 10 + palin % 10;
+                    palin /= 10;
                 }
+
+                if (maxNumber < temp || temp < 0)
+                {
+                    temp = -1;
+                }
+                result[i] = temp;
             }
-            return result.ToArray();
+            return result;
         }
 
         private bool ArraysAreEqual(char[]? firstArray, char[]? secondArray)
