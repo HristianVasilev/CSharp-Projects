@@ -169,6 +169,7 @@ namespace ListNUnitTests
 
 
 
+
         [Test]
         public void CopyTo_EmptyArray_ReturnsFilledArray()
         {
@@ -206,6 +207,48 @@ namespace ListNUnitTests
             {
                 Assert.AreEqual(listOfInt[i], array[i + 2]);
             }
+        }
+
+        [Test]
+        public void IndexOf_ValidItem11_ReturnsCorrectIndex()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                listOfInt.Add(10 + i);
+            }
+
+            int expectedResult = 1;
+            int actualResult = listOfInt.IndexOf(11);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void IndexOf_ValidItem15_ReturnsCorrectIndex()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                listOfInt.Add(10 + i);
+            }
+
+            int expectedResult = 5;
+            int actualResult = listOfInt.IndexOf(15);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void IndexOf_InvalidItem150_ReturnsCorrectIndex()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                listOfInt.Add(10 + i);
+            }
+
+            int expectedResult = -1;
+            int actualResult = listOfInt.IndexOf(150);
+
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
 }

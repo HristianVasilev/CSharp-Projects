@@ -87,7 +87,15 @@ namespace List.Models.Classes
 
         public int IndexOf(T item)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (item.Equals(array[i]))
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         public void Insert(int index, T item)

@@ -1,0 +1,15 @@
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\bin\Debug\net6.0\RomanToInteger.exe
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\bin\Debug\net6.0\RomanToInteger.deps.json
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\bin\Debug\net6.0\RomanToInteger.runtimeconfig.json
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\bin\Debug\net6.0\RomanToInteger.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\bin\Debug\net6.0\RomanToInteger.pdb
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.csproj.AssemblyReference.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.AssemblyInfoInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.AssemblyInfo.cs
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.csproj.CoreCompileInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\refint\RomanToInteger.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.pdb
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\RomanToInteger.genruntimeconfig.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\RomanToInteger\RomanToInteger\obj\Debug\net6.0\ref\RomanToInteger.dll
