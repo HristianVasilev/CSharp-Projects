@@ -28,5 +28,22 @@
             }
             return true;
         }
+
+        public bool IsPalindrome(int x)
+        {
+            var numbers = x.ToString().ToCharArray();
+
+            var leftPart = numbers.Take(numbers.Length / 2).ToArray();
+            var rightPartReversed = numbers.TakeLast(numbers.Length / 2).Reverse().ToArray();
+
+            for (int i = 0; i < leftPart.Length; i++)
+            {
+                if (leftPart[i] != rightPartReversed[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
