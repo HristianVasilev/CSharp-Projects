@@ -134,6 +134,26 @@
             return resultNode;
         }
 
+        public int Reverse(int x)
+        {
+            string intAsString = x.ToString();
+            StringBuilder sb = new StringBuilder();
+
+            if (intAsString.StartsWith("-"))
+            {
+                intAsString = intAsString.Replace("-", string.Empty);
+                sb.Append("-");
+            }
+
+            for (int i = intAsString.Length - 1; i >= 0; i--)
+            {
+                sb.Append(intAsString[i].ToString());
+            }
+            int result = 0;
+            int.TryParse(sb.ToString().Trim(), out result);
+            return result;
+        }
+
         #region Help methods
         private bool ArraysAreEqual(char[]? firstArray, char[]? secondArray)
         {

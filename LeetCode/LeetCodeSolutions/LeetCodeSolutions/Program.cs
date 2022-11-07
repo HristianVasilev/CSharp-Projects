@@ -12,11 +12,14 @@ Solution solution = new Solution();
 //var twoSumResult = solution.TwoSum(new int[] { 3, 2, 3 }, 6);
 //Console.WriteLine($"[{String.Join(", ", twoSumResult)}]");
 
-var addTwoNumbers = solution.AddTwoNumbers(
-    new ListNode(2, new ListNode(4, new ListNode(3))),
-    new ListNode(5, new ListNode(6, new ListNode(4))));
-while (addTwoNumbers != null)
-{
-    Console.Write(addTwoNumbers.val);
-    addTwoNumbers = addTwoNumbers.next;
-}
+//var addTwoNumbers = solution.AddTwoNumbers(
+//    new ListNode(2, new ListNode(4, new ListNode(3))),
+//    new ListNode(5, new ListNode(6, new ListNode(4))));
+//while (addTwoNumbers != null)
+//{
+//    Console.Write(addTwoNumbers.val);
+//    addTwoNumbers = addTwoNumbers.next;
+//}
+
+var reverse = solution.Reverse(1534236469);
+Console.WriteLine(reverse);
