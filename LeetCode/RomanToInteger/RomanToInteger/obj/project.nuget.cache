@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OXkONCDromqarhVm5zFQGLQViN6bL+Fz7NM5ahU7Rfic2Nv6roJMKfFd3Ymd3SPyjJ6qUNqXnWhtp3nXM4fYXw==",
+  "dgSpecHash": "amCxNpteiL5A0pXB6qo75M5OzB0/INU59tLim8ZcyL35J9nOjvAjWN1+zJp7BtlY69mZO9kU8rg0DagPHy7mBw==",
   "success": true,
-  "projectFilePath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\RomanToInteger.csproj",
+  "projectFilePath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\LeetCodeSolutions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\RomanToInteger.csproj",
-      "projectName": "RomanToInteger",
-      "projectPath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\RomanToInteger.csproj",
+      "projectUniqueName": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\LeetCodeSolutions.csproj",
+      "projectName": "LeetCodeSolutions",
+      "projectPath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\LeetCodeSolutions.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
       "outputPath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\LeetCode\\RomanToInteger\\RomanToInteger\\obj\\",
       "projectStyle": "PackageReference",
