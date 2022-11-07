@@ -1,0 +1,15 @@
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\bin\Debug\net6.0\LeetCodeSolutions.exe
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\bin\Debug\net6.0\LeetCodeSolutions.deps.json
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\bin\Debug\net6.0\LeetCodeSolutions.runtimeconfig.json
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\bin\Debug\net6.0\LeetCodeSolutions.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\bin\Debug\net6.0\LeetCodeSolutions.pdb
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.csproj.AssemblyReference.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.AssemblyInfoInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.AssemblyInfo.cs
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.csproj.CoreCompileInputs.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\refint\LeetCodeSolutions.dll
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.pdb
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\LeetCodeSolutions.genruntimeconfig.cache
+D:\SoftUni\Repositories\CSharp-Projects\LeetCode\LeetCodeSolutions\LeetCodeSolutions\obj\Debug\net6.0\ref\LeetCodeSolutions.dll
