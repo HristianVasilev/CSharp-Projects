@@ -21,5 +21,8 @@ Solution solution = new Solution();
 //    addTwoNumbers = addTwoNumbers.next;
 //}
 
-var reverse = solution.Reverse(1534236469);
-Console.WriteLine(reverse);
+//var reverse = solution.Reverse(1534236469);
+//Console.WriteLine(reverse);
+
+var myPow = solution.MyPow(2.00000, -2);
+Console.WriteLine(myPow);

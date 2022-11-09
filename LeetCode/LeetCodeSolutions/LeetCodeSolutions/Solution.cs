@@ -154,6 +154,27 @@
             return result;
         }
 
+        public double MyPow(double x, int n)
+        {
+            if (n == 0 | x == 1) return 1;
+            if (x == 0) return 0;
+
+            if (n < 0)
+            {
+                n = -n;
+                x = 1 / x;
+            }
+
+            if (n % 2 == 0)
+            {
+                return MyPow(x * x, n / 2);
+            }
+            else
+            {
+                return x * MyPow(x, n - 1);
+            }
+        }
+
         #region Help methods
         private bool ArraysAreEqual(char[]? firstArray, char[]? secondArray)
         {
