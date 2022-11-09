@@ -24,5 +24,16 @@ Solution solution = new Solution();
 //var reverse = solution.Reverse(1534236469);
 //Console.WriteLine(reverse);
 
-var myPow = solution.MyPow(2.00000, -2);
-Console.WriteLine(myPow);
+//var myPow = solution.MyPow(2.00000, -2);
+//Console.WriteLine(myPow);
+
+//MinStack minStack = new MinStack();
+//minStack.Push(2);
+//minStack.Push(0);
+//minStack.Push(3);
+
+//Console.WriteLine(minStack.GetMin());
+//minStack.Pop();
+//Console.WriteLine(minStack.GetMin());
+//minStack.Pop();
+//Console.WriteLine(minStack.GetMin());
