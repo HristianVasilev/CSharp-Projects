@@ -175,6 +175,15 @@
             }
         }
 
+        public IList<int> InorderTraversal(TreeNode root)
+        {
+            if (root == null)
+            {
+                return new List<int>();
+            }
+            return Inorder(root);
+        }
+
         #region Help methods
         private bool ArraysAreEqual(char[]? firstArray, char[]? secondArray)
         {
@@ -192,6 +201,21 @@
         {
             IEnumerable<char> zeros = Enumerable.Repeat('0', count);
             return string.Join(string.Empty, zeros);
+        }
+
+        private IList<int> Inorder(TreeNode node)
+        {
+            List<int> list = new List<int>();
+            if (node.left != null)
+            {
+                list.AddRange(Inorder(node.left));
+            }
+            list.Add(node.val);
+            if (node.right != null)
+            {
+                list.AddRange(Inorder(node.right));
+            }
+            return list;
         }
         #endregion
     }

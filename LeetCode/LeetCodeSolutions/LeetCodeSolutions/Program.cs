@@ -37,3 +37,9 @@ Solution solution = new Solution();
 //Console.WriteLine(minStack.GetMin());
 //minStack.Pop();
 //Console.WriteLine(minStack.GetMin());
+
+//TreeNode treeNode = new TreeNode(1, right: new TreeNode(2, left: new TreeNode(3)));
+TreeNode treeNode = null;
+
+var inorder = solution.InorderTraversal(treeNode);
+Console.WriteLine($"[{String.Join(", ", inorder)}]");
