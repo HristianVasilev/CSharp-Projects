@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageUrls>
+	<ApplicationPage>https://app-qa-probation.azurewebsites.net/</ApplicationPage>
+	<LoginPage>https://app-qa-probation.azurewebsites.net/Authentication/Login</LoginPage>
+	<UserEnrollmentPage>https://app-qa-probation.azurewebsites.net/UserEnrollment/InitialDetails</UserEnrollmentPage>
+</PageUrls>
