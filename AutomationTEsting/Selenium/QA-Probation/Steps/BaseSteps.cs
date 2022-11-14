@@ -43,6 +43,10 @@
             Browser.Quit();
         }
 
+        /// <summary>
+        /// Gets base URL from './Pages.xml' file.
+        /// </summary>
+        /// <param name="pageName">Page name</param>
         protected static string GetBaseUrl(string pageName)
         {
             string path = Path.Combine("..", "..", "..", "bin", "Debug", "net6.0", "Pages", "Pages.xml");
@@ -58,18 +62,19 @@
         /// </summary>
         /// <param name="expectedToBeDisplayed">Expected behaviour</param>
         /// <param name="webObjectName">Name of the web object</param>
+        /// <param name="timeout">Time to wait till the condition is satisfied (in seconds)</param>
         protected void ValidateElementIsDisplayed
-            (WebObject webObject, bool expectedToBeDisplayed, string webObjectName = null)
+            (WebObject webObject, bool expectedToBeDisplayed, string webObjectName = null, TimeSpan timeout = default)
         {
             if (expectedToBeDisplayed)
             {
                 Logger.Info("Valiadate '{0}' is displayed.", webObjectName);
-                Assert.True(webObject.WaitForDisplayed().Displayed);
+                Assert.True(webObject.WaitForDisplayed(timeout).Displayed);
             }
             else
             {
                 Logger.Info("Valiadate '{0}' is not displayed.", webObjectName);
-                Assert.True(webObject.WaitForElementToDisappear()); // if the element disappears, method returns true.
+                Assert.True(webObject.WaitForElementToDisappear(timeout)); // if the element disappears, method returns true.
             }
         }
     }

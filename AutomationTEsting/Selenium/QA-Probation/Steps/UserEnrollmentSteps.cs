@@ -92,18 +92,20 @@
         /// Validates whether 'Continue' button is displayed or not.
         /// </summary>
         /// <param name="expectedResult">Expected behaviour</param>
-        public void ValidateContinueButtonIsDisplayed(bool expectedResult = true)
+        /// <param name="timeout">Time to wait till the condition is satisfied (in seconds)</param>
+        public void ValidateContinueButtonIsDisplayed(bool expectedResult = true, TimeSpan timeout = default)
         {
-            ValidateElementIsDisplayed(UserEnrollmentPage.ContinueButton, expectedResult, "Continue button");
+            ValidateElementIsDisplayed(UserEnrollmentPage.ContinueButton, expectedResult, "Continue button", timeout);
         }
 
         /// <summary>
         /// Validates whether 'Create Account' button is displayed or not.
         /// </summary>
         /// <param name="expectedResult">Expected behavior</param>
-        public void ValidateCreateAccountButtonIsDisplayed(bool expectedResult = true)
+        /// <param name="timeout">Time to wait till the condition is satisfied (in seconds)</param>
+        public void ValidateCreateAccountButtonIsDisplayed(bool expectedResult = true, TimeSpan timeout = default)
         {
-            ValidateElementIsDisplayed(UserEnrollmentPage.CreateAccountButton, expectedResult, "Create Account button");
+            ValidateElementIsDisplayed(UserEnrollmentPage.CreateAccountButton, expectedResult, "Create Account button", timeout);
         }
     }
 }
