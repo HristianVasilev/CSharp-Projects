@@ -369,3 +369,8 @@ obj/	# ignore obj directory
 .vs/	# ignore .vs directory
 *.obj 	# ignore any files with .obj postfix 
 *.suo	# ignore any files with .suo postfix 
+
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
