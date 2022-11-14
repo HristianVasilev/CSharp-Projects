@@ -10,10 +10,12 @@ namespace Selenium
     public class QAProbationTests : BaseTest
     {
         private const string EMAIL_255CHAR_LONG = "randomString1randomString2randomString3randomString4randomString5randomString6randomString7randomString8randomString9randomString10randomString11randomString12randomString13randomString14randomString15randomString16randomString17randomStrin@test-email.com";
+        private const string VALID_PASSWORD = "P@ssword1";
+
+        #region Resource keys 
         private const string ENTER_VALID_EMAIL = "EnterValidEmail";
         private const string MAX_EMAIL_LENGTH = "MaxEmailLength";
-
-        private const string VALID_PASSWORD = "P@ssword1";
+        #endregion
 
         #region Steps
         private ApplicationSteps ApplicationSteps;
@@ -50,8 +52,8 @@ namespace Selenium
         }
 
         [TestCase("random@email.com", TestName = "TC-1000")]
-        [TestCase("random_rnd33-rn.h5h63h@test-email.com", TestName = "TC-1001")]
-        [TestCase(EMAIL_255CHAR_LONG, TestName = "TC-1002")]
+        [TestCase("random_rnd33-rn.h5P0@test-email.com", TestName = "TC-1001", Description = "The email address contains all often used allowed character types.")]
+        [TestCase(EMAIL_255CHAR_LONG, TestName = "TC-1002", Description = "Max allowed email-address length.")]
         [Test(Description = "Input field 'Email' accepts valid email address.")]
         public void ValidEmailFormat_Accepted(string emailAddress)
         {
@@ -61,15 +63,15 @@ namespace Selenium
             UserEnrollmentSteps.ValidateEmailErrorMessage();
         }
 
-        [TestCase("random33-@email.com", ENTER_VALID_EMAIL, TestName = "TC-2001", Description = "The prefix contans dash.")]
-        [TestCase(".random33@email.com", ENTER_VALID_EMAIL, TestName = "TC-2002", Description = "The prefix starts with period.")]
-        [TestCase("random@33@email.com", ENTER_VALID_EMAIL, TestName = "TC-2003", Description = "The prefix contains '@'.")]
+        [TestCase("random33-@email.com", ENTER_VALID_EMAIL, TestName = "TC-2001", Description = "The prefix ends with dash.")]
+        [TestCase(".random33@email.com", ENTER_VALID_EMAIL, TestName = "TC-2002", Description = "The prefix starts with period ('.').")]
+        [TestCase("random@33@email.com", ENTER_VALID_EMAIL, TestName = "TC-2003", Description = "The prefix/domain contains '@'.")]
         [TestCase("random@email", ENTER_VALID_EMAIL, TestName = "TC-2004", Description = "Incomplete domain.")]
         [TestCase("random@test#email.com", ENTER_VALID_EMAIL, TestName = "TC-2005", Description = "The domain contains special character.")]
         [TestCase("random@email..com", ENTER_VALID_EMAIL, TestName = "TC-2006", Description = "The domain contains a sequence of periods.")]
-        [TestCase("random@email-com", ENTER_VALID_EMAIL, TestName = "TC-2007", Description = "The top level part of the domain is missing.")]
+        [TestCase("random@test-email", ENTER_VALID_EMAIL, TestName = "TC-2007", Description = "The top level part of the domain is missing.")]
         [TestCase("randomemail.com", ENTER_VALID_EMAIL, TestName = "TC-2008", Description = "'@' is missing.")]
-        [TestCase($"E{EMAIL_255CHAR_LONG}", MAX_EMAIL_LENGTH, TestName = "TC-2009", Description = "256 characters-long email address.")]
+        [TestCase($"E{EMAIL_255CHAR_LONG}", MAX_EMAIL_LENGTH, TestName = "TC-2009", Description = "256 characters-long email address (valid format).")]
         [Test(Description = "Input field 'Email' does not accept invalid email address.")]
         public void InvalidEmailFormat_NotAccepted(string emailAddress, string expectedErrorMessage_ResourceName)
         {
