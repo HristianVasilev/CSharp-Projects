@@ -692,8 +692,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\SoftUni\\Repositories\\CSharp-Projects\\AutomationTEsting\\Selenium\\Common\\Common.csproj": {
-              "projectPath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\AutomationTEsting\\Selenium\\Common\\Common.csproj"
+            "D:\\SoftUni\\Repositories\\CSharp-Projects\\AutomationTesting\\Selenium\\Common\\Common.csproj": {
+              "projectPath": "D:\\SoftUni\\Repositories\\CSharp-Projects\\AutomationTesting\\Selenium\\Common\\Common.csproj"
             }
           }
         }
