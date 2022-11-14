@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+bin/ 	# ignore bin directory
+/bin 	# ignore bin directory
+obj/	# ignore obj directory
+/OBJ	# ignore obj directory
+.vs/	# ignore .vs directory
+*.obj 	# ignore any files with .obj postfix 
+*.suo	# ignore any files with .suo postfix 
