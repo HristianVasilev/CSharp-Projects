@@ -1,0 +1,14 @@
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\bin\Release\net10.0\win-x64\TheButton.exe
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\bin\Release\net10.0\win-x64\TheButton.deps.json
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\bin\Release\net10.0\win-x64\TheButton.runtimeconfig.json
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\bin\Release\net10.0\win-x64\TheButton.dll
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\bin\Release\net10.0\win-x64\TheButton.pdb
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.AssemblyInfoInputs.cache
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.AssemblyInfo.cs
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.csproj.CoreCompileInputs.cache
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.dll
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\refint\TheButton.dll
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.pdb
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\TheButton.genruntimeconfig.cache
+C:\Users\hrvasilev\source\repos\TheButton\TheButton\obj\Release\net10.0\win-x64\ref\TheButton.dll
